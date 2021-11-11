@@ -1,0 +1,20 @@
+{
+  "rules": {
+    "rooms": {
+      ".read": false,
+      ".write": "auth != null",
+      "$roomId": {
+        ".read": true,
+        ".write": "auth != null && (!data.exists() || data.child('authorId').val() == auth.id)",
+        "trivias": {
+          ".read": true,
+          ".write": true,
+          "votes": {
+            ".read": true,
+            ".write": true,
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,78 @@
+header {
+  width: 100vw;
+  border-bottom: 1px solid #118ab2;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.room-header {
+  display: flex;
+  width: 80vw;
+  max-width: 1000px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 2rem;
+  transition: transform 2s;
+}
+
+.logo:hover {
+  transform: rotateX(360deg);
+}
+
+.room-title {
+  display: flex;
+  justify-content: center;
+}
+
+.header-buttons {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-end;
+  text-align: center;
+}
+
+.header-buttons button {
+  margin-right: 0;
+}
+
+.logout {
+  background: none;
+  border: none;
+  font-size: 0.9rem;
+  text-decoration: underline;
+  text-align: right;
+  width: 100%;
+  color: #118ab2;
+}
+.main-room {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 1rem;
+}
+
+.room-content {
+  width: 80vw;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.trivia-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
